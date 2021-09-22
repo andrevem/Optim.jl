@@ -99,7 +99,7 @@ function optimize(
             p = (new_minimizer - old_old_minimizer) * q - (new_minimizer - old_minimizer) * r
             q = 2(q - r)
 
-            if q > zero(T)
+            if q > zero(typeof(q))
                 p = -p
             else
                 q = -q
